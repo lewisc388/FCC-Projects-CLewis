@@ -1,0 +1,66 @@
+$background: #301D49;
+$main-box: #EFF4EC;
+$btn-main: #DD608B;
+$btn-active: #F0B165;
+
+body {
+  background-color: $background;
+}
+
+#drum-machine {
+  background-color: $main-box;
+  width: 500px;
+  height: 500px;
+  padding: 6px;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  border-radius: 10px;
+}
+#display{
+  background-color: darken($main-box, 20%);
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: $btn-main;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#drum-container{
+  margin: 36px;
+  margin-top: 10px;
+}
+.drum-pad{
+  background-color: $btn-main;
+  color: $main-box;
+  border-radius: 8px;
+  border: 2px solid darken($main-box, 20%);
+  font-size: 26px;
+  width: 130px;
+  height: 130px;
+  margin: 6px;
+  transition: 0.5s;
+}
+.drum-pad:hover{
+  background-color: darken($btn-main, 5%);
+  color: darken($main-box, 5%);
+}
+.drum-pad:active{
+  background-color: darken($btn-active, 5%);
+  color: darken($main-box, 5%);
+}
+.enabled{
+  background-color: darken($btn-active, 5%);
+  color: darken($main-box, 5%);
+}

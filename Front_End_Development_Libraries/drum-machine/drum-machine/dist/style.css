@@ -1,0 +1,64 @@
+body {
+  background-color: #301D49;
+}
+
+#drum-machine {
+  background-color: #EFF4EC;
+  width: 500px;
+  height: 500px;
+  padding: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#display {
+  background-color: #b9cfab;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #DD608B;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#drum-container {
+  margin: 36px;
+  margin-top: 10px;
+}
+
+.drum-pad {
+  background-color: #DD608B;
+  color: #EFF4EC;
+  border-radius: 8px;
+  border: 2px solid #b9cfab;
+  font-size: 26px;
+  width: 130px;
+  height: 130px;
+  margin: 6px;
+  transition: 0.5s;
+}
+
+.drum-pad:hover {
+  background-color: #d94b7c;
+  color: #e1ebdc;
+}
+
+.drum-pad:active {
+  background-color: #eea54e;
+  color: #e1ebdc;
+}
+
+.enabled {
+  background-color: #eea54e;
+  color: #e1ebdc;
+}

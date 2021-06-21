@@ -1,0 +1,104 @@
+$dark-shade: #495867;
+$dark-accent: #577399;
+$main-brand: #FE5F55;
+$light-accent: #BDD5EA;
+$light-shade: #F7F7FF;
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: $dark-shade;
+  color: $light-shade;
+}
+#app{
+  display: table
+}
+#calculator{
+  background-color: darken($dark-shade, 15%);
+  width: 576px;
+  height: 320px;
+  
+  margin: auto;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  
+  
+  padding: 4px;
+  border-radius: 4px;
+}
+
+
+#display-container{
+  background-color: $dark-accent;
+  font-family: 'Courier New', monospace;
+  width: 568px;
+  height: 50px;
+  margin: 2px;
+  padding: 2px;
+  
+  text-align: right;
+  border-radius: 2px;
+  overflow: hidden;
+}
+#formula{
+  width: 560px;
+  margin-top: 2px;
+  font-size: 14px;
+  overflow: hidden;
+}
+#display{
+  width: 560px;
+  margin-top: 2px;
+  font-size: 22px;
+  overflow: hidden;
+}
+
+#numbers {
+  display: inline-block;
+  margin-top: 6px;
+  float: left;
+  width: 576px;
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  height: 60px;
+  min-width: 111px;
+  margin: 2px;
+  font-size: 22px;
+  outline: none;
+  transition: background-color 0.5s ease;
+}
+.nums{
+  color: black;
+  background-color: $light-shade;
+}
+.nums:hover{
+  background-color: darken($light-shade, 5%);
+}
+.ops{
+  background-color: $light-accent;
+  font-weight: bold;
+}
+.ops:hover{
+  background-color: darken($light-accent, 10%);
+}
+#clear{
+  width: 226px;
+}
+#zero {
+  width: 226px;
+}
+#equals {
+  width: 226px;
+  background-color: $main-brand;
+}
+#equals:hover{
+  background-color: darken($main-brand, 15%);
+}

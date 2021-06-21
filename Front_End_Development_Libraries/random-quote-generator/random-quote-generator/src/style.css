@@ -1,0 +1,106 @@
+html, main, body, #root {
+  font-family: Century Gothic, sans-serif;
+  text-shadow: black 0px 0px 3px;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+}
+#quote-box {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 50vw;
+  max-height: 50vw;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+#text {
+  
+}
+#author {
+  font-style: italic;
+}
+
+.btn{
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  
+  opacity: 1;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.6
+}
+
+#tweet-button {
+  background-color: #1DA1F2;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}

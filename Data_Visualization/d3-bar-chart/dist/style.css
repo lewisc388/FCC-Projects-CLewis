@@ -1,0 +1,27 @@
+body{
+  background-color: rgba(159, 211, 229, 1);
+}
+#app {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  width: 1500px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#title{
+  text-align: center;
+  font-size: 24px;
+  padding: 4px;
+}
+#chart{
+  margin: 0 auto;
+  display: block;
+}

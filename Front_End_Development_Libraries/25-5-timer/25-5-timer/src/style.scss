@@ -1,0 +1,119 @@
+
+$light-shade: #F8F8F7;
+$light-accent: #F5CD7A;
+$main-brand: #A0ACBC;
+$dark-accent: #C27176;
+$dark-shade: #656A82;
+:root {
+  --basecolor: $dark-shade;
+  --textcolor: $light-shade;
+  --buttoncolor: $main-brand;
+}
+
+body{
+  font-family: Calibri, Arial, Serif;
+  background-color: $dark-shade;
+  color: $light-shade;
+}
+#main-container{
+  background-color: darken($dark-shade, 10%);
+  border-radius: 8px;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 8px;
+}
+#sesbrk-container{
+  width: 700px;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mod-box{
+  display: inline-block;
+  text-align: center;
+  background-color: darken($dark-shade, 15%);
+  height: 150px;
+  width: 250px;
+  margin: 0px 50px;
+  border-radius: 8px;
+}
+.box-label{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 4px;
+  margin-bottom: 26px;
+}
+.addsub-container{
+  width: 250px;
+  height: 50%;
+  margin: auto;
+}
+button{
+  font-weight: bold;
+  background-color: $main-brand;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  min-width: 40px;
+  min-height: 40px;
+  vertical-align: middle;
+  color: $light-shade;
+}
+button:hover{
+  background-color: darken($main-brand, 5%);
+  cursor: pointer;
+}
+button:active{
+  background-color: darken($main-brand, 10%);
+}
+#break-decrement, #session-decrement{
+  font-size: 30px;
+  border-radius: 6px 0px 0px 6px;
+}
+#break-increment, #session-increment{
+  font-size: 30px;
+  border-radius: 0px 6px 6px 0px;
+}
+.lengths{
+  font-weight: bold;
+  font-size: 30px;
+  background-color: darken($main-brand, 15%);
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+#timer-container{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#timer-box{
+  background-color: darken($dark-shade, 15%);
+  border-radius: 8px;
+  width: 300px;
+  height: 250px;
+  margin: auto;
+}
+#timer-label{
+  font-weight: bold;
+  font-size: 36px;
+  margin: 10px;
+  padding-top: 20px;
+}
+#time-left{
+  font-size: 70px;
+}
+#start_stop, #reset{
+  margin: 6px;
+  margin-top: 10px;
+}
