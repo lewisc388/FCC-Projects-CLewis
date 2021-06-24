@@ -1,3 +1,6 @@
+### Original link
+https://replit.com/@lewisc388/boilerplate-time-calculator
+
 ### Assignment
 
 Write a function named `add_time` that takes in two required parameters and one optional parameter:
